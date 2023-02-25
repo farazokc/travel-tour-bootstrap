@@ -73,6 +73,29 @@
         color: rgb(0, 0, 0);
         border-bottom-color: rgb(0, 0, 0);
       }
+
+      .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+      }
+
+      .card-body {
+        height: 20vh;
+        overflow-y: scroll;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 0.45rem;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(27, 27, 27, 0.4);
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
     </style>
   </head>
   <body>
@@ -101,7 +124,6 @@
         </div>
       </header>
     </div>
-    <br />
 
     <main>
       <section class="py-5 text-center container">
@@ -118,10 +140,10 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
-                <img src="camping.jpg" class="card-img-top" alt="..." />
+                <img src="marriot.jpg" class="card-img-top" alt="Marriott" />
                 <div class="card-body">
                   <h5 class="card-title">Marriott Hotel, Karachi</h5>
-                  <p>Rate:</p>
+                  <p>Rate: Rs 36,300 per person, per day</p>
                   Facilities:
                   <div class="row">
                     <div class="col-6 card-text">
@@ -143,24 +165,177 @@
                       </ul>
                     </div>
                   </div>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        View
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Edit
-                      </button>
+                  <div class="row">
+                    <div class="col-12 row-text">
+                      Cuisine:
+                      <p>Continental, Vegetarian, Asian, American, Buffet</p>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="ambiance.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Ambiance Boutique Art Hotel, Karachi
+                  </h5>
+                  <p>Rate: Rs 30,500 per person, per day</p>
+                  Facilities:
+                  <div class="row">
+                    <div class="col-6 card-text">
+                      <ul>
+                        <li>Airport shuttle (free)</li>
+                        <li>Free WiFi</li>
+                        <li>Free parking</li>
+                      </ul>
+                    </div>
+                    <div class="col-6 card-text">
+                      <ul>
+                        <li>Family rooms</li>
+                        <li>Room service</li>
+                        <li>Tea/coffee makers</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 row-text">
+                      Cuisine:
+                      <p>
+                        Full English/Irish, Vegetarian, Vegan, Halal,
+                        Gluten-free, Asian, Breakfast to go
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="PC.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Pearl Continental Hotel, Karachi</h5>
+                  <p>Rate: Rs 31,190 per person, per day</p>
+                  Facilities:
+                  <div class="row">
+                    <div class="col-6 card-text">
+                      <ul>
+                        <li>Swimming Pool</li>
+                        <li>Free WiFi</li>
+                        <li>Air conditioning</li>
+                        <li>Wellness centre</li>
+                        <li>Free parking</li>
+                      </ul>
+                    </div>
+                    <div class="col-6 card-text">
+                      <ul>
+                        <li>Airport shuttle (free)</li>
+                        <li>Non-smoking rooms</li>
+                        <li>Room service</li>
+                        <li>Tea/coffee makers</li>
+                        <li>Lift</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 row-text">
+                      Cuisine:
+                      <p>Continental, Buffet</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Airports</h1>
+            <p class="lead text-muted">Find info about airports</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="JAX.jpg" class="card-img-top" alt="Marriott" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Jinnah International Airport, Karachi
+                  </h5>
+                  <div class="row">
+                    <div class="col-4 card-text">
+                      <ul>
+                        <li>To: Dubai</li>
+                        <li>Timing: 1h 15m</li>
+                        <li>Schedule: 2:50am - 4:05am</li>
+                        <li>Cost: 40,000</li>
+                      </ul>
+                    </div>
+                    <div class="col-4 card-text">
+                      <ul>
+                        <li>To: Sharjah</li>
+                        <li>Timing: 1h 10m</li>
+                        <li>Schedule: 2:20am - 3:30am</li>
+                        <li>Cost: 35,000</li>
+                      </ul>
+                    </div>
+                    <div class="col-4 card-text">
+                      <ul>
+                        <li>To: Doha</li>
+                        <li>Timing: 1h 10m</li>
+                        <li>Schedule: 9:30am - 10:40am</li>
+                        <li>Cost: 45,000</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="ISX.jpg" class="card-img-top" alt="Marriott" />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Islamabad International Airport, Islamabad
+                  </h5>
+                  <div class="row">
+                    <div class="col-4 card-text">
+                      <ul>
+                        <li>To: Jeddah</li>
+                        <li>Timing: 1h 15m</li>
+                        <li>Schedule: 3:00am - 4:15am</li>
+                        <li>Cost: 38,000</li>
+                      </ul>
+                    </div>
+                    <div class="col-4 card-text">
+                      <ul>
+                        <li>To: Abu Dhabi</li>
+                        <li>Timing: 1h 10m</li>
+                        <li>Schedule: 4:25am - 5:35am</li>
+                        <li>Cost: 35,000</li>
+                      </ul>
+                    </div>
+                    <div class="col-4 card-text">
+                      <ul>
+                        <li>To: Istanbul</li>
+                        <li>Timing: 2h 35m</li>
+                        <li>Schedule: 7:05am - 9:40am</li>
+                        <li>Cost: 55,000</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

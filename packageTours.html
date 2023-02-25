@@ -92,6 +92,18 @@
         -moz-appearance: textfield;
         appearance: textfield;
       }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 0.45rem;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(27, 27, 27, 0.4);
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
     </style>
   </head>
 
@@ -214,9 +226,7 @@
             <div
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
             >
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Trekking, Northern Pakistan
-              </h3>
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Trekking</h3>
             </div>
             <div class="card-body">
               <p class="card-text">
