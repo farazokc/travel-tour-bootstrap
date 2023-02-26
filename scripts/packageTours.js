@@ -37,3 +37,8 @@ const generateAlert = () => {
   alert("Tour Booking successful!");
   location.reload();
 };
+
+const generateCancelAlert = () => {
+  alert("Tour Booking cancelled successfully!");
+  location.reload();
+};

@@ -506,6 +506,63 @@
       </div>
     </div>
 
+    <!-- Form -->
+    <div class="album py-5 bg-light">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Cancel tour booking!</h2>
+
+        <form class="row g-3 text-start" onsubmit="generateCancelAlert()">
+          <div class="col-md-3">
+            <label for="fname" class="form-label">Full Name</label>
+            <input
+              type=""
+              class="form-control"
+              id="fname"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="emailID" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailID"
+              placeholder="myemail@example.com"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="contactNum" class="form-label">Contact Number</label>
+            <input
+              type="number"
+              min="0"
+              class="form-control"
+              id="contactNum"
+              placeholder="+921234567890"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="registration" class="form-label">Registration #</label>
+            <input
+              type="number"
+              min="0"
+              class="form-control"
+              id="registration"
+              placeholder="123123"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <button id="bookTour" type="submit" class="btn btn-primary">
+              Cancel booking
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- ........... Modals ........... -->
     <!-- Pakistan -->
     <div
@@ -1005,12 +1062,12 @@
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>Hyderabad – Hirabad – Bhitshah – Sehvan – Larkana</td>
+                  <td>Hyderabad - Hirabad - Bhitshah - Sehvan - Larkana</td>
                   <td>Tombs of Talpur Kings, Bhit Shah,</td>
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>Larkana – Mohenjodaro – Sukkur</td>
+                  <td>Larkana - Mohenjodaro - Sukkur</td>
                   <td>Mohenjo-Daro</td>
                 </tr>
                 <tr>

@@ -40,3 +40,8 @@ const generateAlert = () => {
   alert("Booking successful!");
   location.reload();
 };
+
+const generateCancelAlert = () => {
+  alert("Booking successful!");
+  location.reload();
+};
