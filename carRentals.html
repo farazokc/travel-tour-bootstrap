@@ -11,8 +11,556 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="index.css" />
+    <script src="carRentals.js"></script>
+    <style>
+      .nav-masthead {
+        color: rgb(0, 0, 0);
+      }
+
+      .nav-masthead .active {
+        color: rgb(0, 0, 0);
+        border-bottom-color: rgb(0, 0, 0);
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 0.45rem;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(27, 27, 27, 0.4);
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      .card {
+        text-align: left;
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+      }
+
+      .card-body {
+        height: 20vh;
+        overflow-y: scroll;
+      }
+    </style>
   </head>
-  <body>
+  <body class="text-center">
+    <!-- Navbar -->
+    <div
+      class="d-flex cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
+    >
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">FAST Tours and Travels</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a
+              class="nav-link fw-bold py-1 px-0 text-dark"
+              aria-current="page"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="nav-link fw-bold py-1 px-0 text-dark"
+              href="packageTours.html"
+              >Packages</a
+            >
+            <a
+              class="nav-link fw-bold py-1 px-0 text-dark active"
+              href="carRentals.html"
+              >Car Rentals</a
+            >
+            <a class="nav-link fw-bold py-1 px-0 text-dark" href="infoDesk.html"
+              >Info Desk</a
+            >
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Available Cars</h1>
+            <p class="lead text-muted">
+              We have a wide range of SUVs, Crossover, Sedan and Minivans for
+              your service
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            <!-- Lexus LX SUV -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="lexus_lx.jpg" class="card-img-top" alt="Marriott" />
+                <div class="card-body">
+                  <h5 class="card-title">Lexus LX Series LX 600 UL 2022</h5>
+                  <p>Cost: Rs 30,000 per day</p>
+                  Features:
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li>Mileage: 7 - 9 KM</li>
+                        <li>Transmission: Auto</li>
+                        <li>Fuel type: Petrol</li>
+                        <li>Engine: 3400 cc</li>
+                        <li>Variant: AWD</li>
+                        <li>Max Speed: 180 KM/h</li>
+                        <li>Gearbox: 8-speed</li>
+                        <li>Fuel tank capacity: 80 Litres</li>
+                        <li>No of airbags: 9</li>
+                        <li>Seating Capacity: 5 persons</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Sportage SUV -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="kia_sportage.png"
+                  class="card-img-top"
+                  alt="Marriott"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">KIA Sportage</h5>
+                  <p>Cost: Rs 15,000 per day</p>
+                  Features:
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li>Mileage: 10 - 12 KM</li>
+                        <li>Transmission: Auto</li>
+                        <li>Fuel type: Petrol</li>
+                        <li>Engine: 2000 cc</li>
+                        <li>Variant: AWD</li>
+                        <li>Max Speed: 180 KM/h</li>
+                        <li>Gearbox: 6-speed</li>
+                        <li>Fuel tank capacity: 62 Litres</li>
+                        <li>No of airbags: 5</li>
+                        <li>Seating Capacity: 5 persons</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Land Cruiser SUV -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="land_cruiser.png"
+                  class="card-img-top"
+                  alt="Marriott"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Toyota Land Cruiser 2023</h5>
+                  <p>Cost: Rs 27,000 per day</p>
+                  Features:
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li>Mileage: 9 - 11 KM</li>
+                        <li>Transmission: Auto</li>
+                        <li>Fuel type: Petrol</li>
+                        <li>Engine: 3444 cc</li>
+                        <li>Variant: ZX 3.5L Gasoline</li>
+                        <li>Max Speed: 240 KM/h</li>
+                        <li>Gearbox: 10-speed</li>
+                        <li>Fuel tank capacity: 110 Litres</li>
+                        <li>No of airbags: 13</li>
+                        <li>Seating Capacity: 7 persons</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Range Rover Vogue Supercharged SUV -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="range_rover.jpg"
+                  class="card-img-top"
+                  alt="Marriott"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Range Rover Vogue Supercharged 5.0 V8
+                  </h5>
+                  <p>Cost: Rs 37,000 per day</p>
+                  Features:
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li>Mileage: 7 - 9 KM</li>
+                        <li>Transmission: Auto</li>
+                        <li>Fuel type: Petrol</li>
+                        <li>Engine: 5000 cc</li>
+                        <li>Variant: V8</li>
+                        <li>Max Speed: 240 KM/h</li>
+                        <li>Gearbox: 8-speed</li>
+                        <li>Fuel tank capacity: 105 Litres</li>
+                        <li>No of airbags: 10</li>
+                        <li>Seating Capacity: 7 persons</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- BMW iX3 2022 M Sport Crossover -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="bmw_ix3.png" class="card-img-top" alt="Marriott" />
+                <div class="card-body">
+                  <h5 class="card-title">BMW iX3 2022 M Sport Crossover</h5>
+                  <p>Cost: Rs 15,000 per day</p>
+                  Features:
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li>Range: 485 KM</li>
+                        <li>Transmission: Auto</li>
+                        <li>Fuel type: Electric</li>
+                        <li>Engine: 2000 cc</li>
+                        <li>Variant: M Sport Crossover</li>
+                        <li>Max Speed: 180 KM/h</li>
+                        <li>Charging time: 10 hrs</li>
+                        <li>Battery capacity: 73.8 kWh</li>
+                        <li>No of airbags: 5</li>
+                        <li>Seating Capacity: 6 persons</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Mercedes Benz GLB Class Crossover -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="mercedes_glb.jpg"
+                  class="card-img-top"
+                  alt="Marriott"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mercedes Benz GLB Class Crossover</h5>
+                  <p>Cost: Rs 15,000 per day</p>
+                  Features:
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li>Mileage: 9 - 11 KM</li>
+                        <li>Transmission: Auto</li>
+                        <li>Fuel type: Petrol</li>
+                        <li>Engine: 1332 cc</li>
+                        <li>Variant: 7 Seater</li>
+                        <li>Max Speed: 180 KM/h</li>
+                        <li>Gearbox: 7-speed</li>
+                        <li>Fuel tank capacity: 52 Litres</li>
+                        <li>No of airbags: 9</li>
+                        <li>Seating Capacity: 7 persons</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Lexus CT200h F Sport Hatchback -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="lexus_ct200h.jpg"
+                  class="card-img-top"
+                  alt="Marriott"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lexus CT200h F Sport</h5>
+                  <p>Cost: Rs 15,000 per day</p>
+                  Features:
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li>Mileage: 18 - 22 KM</li>
+                        <li>Transmission: Auto</li>
+                        <li>Fuel type: Petrol</li>
+                        <li>Engine: 1800 cc</li>
+                        <li>Variant: F Sport</li>
+                        <li>Max Speed: 180 KM/h</li>
+                        <li>Gearbox: 6-speed</li>
+                        <li>Fuel tank capacity: 45 Litres</li>
+                        <li>No of airbags: 8</li>
+                        <li>Seating Capacity: 5 persons</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hyundai Staria 2023 Minivan -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="hyundai_staria.png"
+                  class="card-img-top"
+                  alt="Marriott"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Hyundai Staria 2023 Minivan</h5>
+                  <p>Cost: Rs 15,000 per day</p>
+                  Features:
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li>Mileage: 10 - 13 KM</li>
+                        <li>Transmission: Auto</li>
+                        <li>Fuel type: Petrol</li>
+                        <li>Engine: 3500 cc</li>
+                        <li>Variant: HGS</li>
+                        <li>Max Speed: 210 KM/h</li>
+                        <li>Gearbox: 8-speed</li>
+                        <li>Fuel tank capacity: 75 Litres</li>
+                        <li>No of airbags: 6</li>
+                        <li>Seating Capacity: 11 persons</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Form -->
+    <div class="album py-5 bg-light">
+      <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Book a car</h2>
+
+        <form class="row g-3 text-start" onsubmit="generateAlert()">
+          <div class="col-md-3">
+            <label for="fname" class="form-label">Full Name</label>
+            <input
+              type=""
+              class="form-control"
+              id="fname"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="emailID" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailID"
+              placeholder="myemail@example.com"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="age" class="form-label">Age</label>
+            <input
+              type="number"
+              min="18"
+              class="form-control"
+              id="age"
+              placeholder="22"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="contactNum" class="form-label">Contact Number</label>
+            <input
+              type="number"
+              min="0"
+              class="form-control"
+              id="contactNum"
+              placeholder="+921234567890"
+              required
+            />
+          </div>
+          <div class="mt-3">
+            <hr />
+          </div>
+
+          <div class="col-6">
+            <label for="inputAddress" class="form-label">Address Line 1</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="R-7/E This St"
+              required
+            />
+          </div>
+          <div class="col-6">
+            <label for="inputAddress2" class="form-label">Address Line 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Block 5 This Area"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="inputCity" class="form-label">City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity"
+              placeholder="Karachi"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="inputState" class="form-label">State</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputState"
+              placeholder="Sindh"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="inputCountry" class="form-label">Country</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCountry"
+              placeholder="Pakistan"
+              required
+            />
+          </div>
+          <div class="col-md-3">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputZip"
+              placeholder="12345"
+              required
+            />
+          </div>
+          <div class="mt-3">
+            <hr />
+          </div>
+          <div class="col-md-4">
+            <label for="car-select" class="form-label">Car</label>
+            <select
+              name="car-select"
+              id="car-select"
+              class="form-control"
+              onchange="changeCosts()"
+              required
+            >
+              <option value="-1" selected>Select a car</option>
+              <optgroup label="SUV">
+                <option value="Lexus LX Series LX 600 UL 2022">
+                  Lexus LX Series LX 600 UL 2022
+                </option>
+                <option value="KIA Sportage">Kia Sportage</option>
+                <option value="Toyota Land Cruiser 2023">
+                  Toyota Land Cruiser 2023
+                </option>
+                <option value=" Rover Vogue Supercharged 5.0 V8">
+                  Range Rover Vogue Supercharged 5.0 V8
+                </option>
+              </optgroup>
+              <optgroup label="Crossover">
+                <option value="BMW iX3 2022 M Sport">
+                  BMW iX3 2022 M Sport
+                </option>
+                <option value="Mercedes Benz GLB Class">
+                  Mercedes Benz GLB Class
+                </option>
+              </optgroup>
+              <optgroup label="Hatchback">
+                <option value="Lexus CT200h F Sport">
+                  Lexus CT200h F Sport
+                </option>
+              </optgroup>
+              <optgroup label="Minivan">
+                <option value="Hyundai Staria 2023 Minivan">
+                  Hyundai Staria 2023 Minivan
+                </option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="numDays" class="form-label">Number of Days</label>
+            <input
+              type="number"
+              class="form-control"
+              id="numDays"
+              min="1"
+              max="31"
+              value="1"
+              onkeyup="changeCosts()"
+              required
+            />
+          </div>
+          <div class="col-md-2">
+            <label for="pricepd" class="form-label"
+              >Car cost per Day (PKR)</label
+            >
+            <input
+              id="pricepd"
+              type="number"
+              class="form-control"
+              min="1"
+              placeholder="cost"
+              readonly
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="totalCost" class="form-label">Total Cost</label>
+            <input
+              type="number"
+              class="form-control"
+              id="totalCost"
+              min="1"
+              placeholder="Days x Per Day Cost"
+              readonly
+            />
+          </div>
+          <div class="col-12">
+            <button id="bookTour" type="submit" class="btn btn-primary">
+              Book the car
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
